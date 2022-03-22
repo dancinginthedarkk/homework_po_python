@@ -11,7 +11,9 @@ class Product:
 
 
 class Basket:
-    basket: List[Product] = []
+
+    def __init__(self):
+        self.basket: List[Product] = []
 
     def add(self, product: Product):
         self.basket.append(product)
